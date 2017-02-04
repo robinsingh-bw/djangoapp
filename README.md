@@ -4,7 +4,7 @@ Demonstration of a basic django app that fetches data from a remote api and disp
 
 ## Installation
 
-Clone this repo and install the dependencies in djangoapp/settings.py:
+Clone this repo and run:
     $ pip install django-bootstrap3
     $ ./manage.py runserver
 
