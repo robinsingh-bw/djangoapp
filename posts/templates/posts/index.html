@@ -1,0 +1,18 @@
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<div class="container">
+  <h2 class="text-center">Posts {{ question }}</h2>
+
+  <ul>
+    {% for post in posts %}
+    <li>
+      <h3>{{ post.title }}</h3>
+      <div>{{ post.body }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
