@@ -1,18 +1,24 @@
-{% load bootstrap3 %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DjangoApp</title>
 
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
 
-<div class="container">
-  <h2 class="text-center">Posts {{ question }}</h2>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Posts</h2>
 
-  <ul>
-    {% for post in posts %}
-    <li>
-      <h3>{{ post.title }}</h3>
-      <div>{{ post.body }}</div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+      <ul>
+        {% for post in posts %}
+        <li>
+          <h3>{{ post.title }}</h3>
+          <div>{{ post.body }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
