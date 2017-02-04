@@ -16,7 +16,7 @@ Mission:
 
 ## Installation
 
-Clone this repo and install the dependencies in testsite/settings.py:
+Clone this repo and install the dependencies in djangoapp/settings.py:
     $ pip install django-bootstrap3
     $ ./manage.py runserver
 
